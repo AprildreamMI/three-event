@@ -39,12 +39,12 @@
    });
    
    // click
-   mesh.('click', (mesh, event) => {
+   mesh.on('click', (mesh, event) => {
        // ...
    })
    
    // hover
-   mesh.('hover', (mesh, event) => {
+   mesh.on('hover', (mesh, event) => {
        // 移入...
    }, (mesh, event) => {
        // 移出...
