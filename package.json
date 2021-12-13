@@ -24,7 +24,7 @@
     "url": "https://github.com/AprildreamMI/three-event/issues"
   },
   "homepage": "https://github.com/AprildreamMI/three-event#readme",
-  "dependencies": {
-    "three": "^0.135.0"
+  "peerDependencies": {
+    "three": ">=0.135.0"
   }
 }
