@@ -1,6 +1,6 @@
 {
   "name": "three-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "threeJs中 监听click和hover事件",
   "main": "index.js",
   "module": "index.js",
