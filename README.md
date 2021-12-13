@@ -1,8 +1,6 @@
 # three-event
 
-基于[three-onEvent](https://github.com/YoneChen/three-onEvent)
-
-对其有如下修改
+基于[three-onEvent](https://github.com/YoneChen/three-onEvent)，对其有如下修改
 
 + 解决一些`bug`
 + 监听传入的`renderer.domElement`
@@ -16,3 +14,42 @@
 + `hover`
 
   > 移入移出
+
+## 使用方式
+
+[例子](https://aprildreammi.github.io/three-event/example/example.html)
+
+1. 安装
+
+   依赖`threeJs`
+
+   ```javascript
+   npm i three-event
+   ```
+
+2. 使用
+
+   ```javascript
+   import ThreeEvent from './onEvent.js'
+   
+   // 初始化
+   const threeOnEvent = new ThreeEvent({
+       domElement: renderer.domElement,
+       camera: camera
+   });
+   
+   // click
+   mesh.('click', (mesh, event) => {
+       // ...
+   })
+   
+   // hover
+   mesh.('hover', (mesh, event) => {
+       // 移入...
+   }, (mesh, event) => {
+       // 移出...
+   })
+   
+   ```
+
+   
